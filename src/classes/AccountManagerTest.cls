@@ -10,7 +10,7 @@ private with sharing class AccountManagerTest {
         RestRequest request = new RestRequest();
         request.requestUri =
                 'https://yourInstance.salesforce.com/services/apexrest/Accounts/'
-                        + recordId + '/contacts';
+                        + recordId;
         request.httpMethod = 'GET';
         RestContext.request = request;
         Account thisCase = AccountManager.getAccount();
